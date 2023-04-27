@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/TestBoot</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="generateentities/PmaUsergroups.hbm.xml"/>
+        <mapping resource="generateentities/User.hbm.xml"/>
+        <mapping resource="generateentities/PmaNavigationhiding.hbm.xml"/>
+        <mapping resource="generateentities/Product.hbm.xml"/>
+        <mapping resource="generateentities/PmaUserconfig.hbm.xml"/>
+        <mapping resource="generateentities/PmaUsers.hbm.xml"/>
+        <mapping resource="generateentities/PmaDesignerSettings.hbm.xml"/>
+        <mapping resource="generateentities/PmaRelation.hbm.xml"/>
+        <mapping resource="generateentities/PmaTableInfo.hbm.xml"/>
+        <mapping resource="generateentities/PmaTracking.hbm.xml"/>
+        <mapping resource="generateentities/PmaColumnInfo.hbm.xml"/>
+        <mapping resource="generateentities/PmaTableCoords.hbm.xml"/>
+        <mapping resource="generateentities/PmaBookmark.hbm.xml"/>
+        <mapping resource="generateentities/Category.hbm.xml"/>
+        <mapping resource="generateentities/PmaExportTemplates.hbm.xml"/>
+        <mapping resource="generateentities/PmaCentralColumns.hbm.xml"/>
+        <mapping resource="generateentities/PmaFavorite.hbm.xml"/>
+        <mapping resource="generateentities/PmaPdfPages.hbm.xml"/>
+        <mapping resource="generateentities/PmaTableUiprefs.hbm.xml"/>
+        <mapping resource="generateentities/PmaSavedsearches.hbm.xml"/>
+        <mapping resource="generateentities/PmaHistory.hbm.xml"/>
+        <mapping resource="generateentities/PmaRecent.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
